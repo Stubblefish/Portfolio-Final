@@ -48,11 +48,12 @@ export default function Project() {
                     {new Date(project.date).toLocaleDateString()}
                   </span>
                   <span>
-                    <strong className="font-bold">Company</strong>{" "}
+                    <strong className="font-bold">While working at</strong>{" "}
                     {project.place}
                   </span>
                   <span>
-                    <strong className="font-bold">Type</strong>: {project.type}
+                    <strong className="font-bold">Type</strong>:{" "}
+                    {project.projectType}
                   </span>
                   <p className="my-6 text-lg text-gray-700 leading-relaxed">
                     {project.desription}
