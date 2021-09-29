@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
+import image from "../firewatch.jpg";
 
 export default function Post() {
   const [postData, setPost] = useState(null);
@@ -24,7 +25,12 @@ export default function Post() {
       .catch(console.error);
   }, []);
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main>
+      <img
+        src={image}
+        alt="Overlooking the forest"
+        className="absolute object-cover w-full h-full"
+      />
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Blog Post Page</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
