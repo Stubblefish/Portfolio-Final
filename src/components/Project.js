@@ -37,8 +37,8 @@ export default function Project() {
         <section className="grid grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16">
-                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
+              <article className="bg-green-800 relative rounded-lg shadow-xl bg-white p-16">
+                <h3 className="text-green-300 text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
                     alt={project.title}
@@ -68,9 +68,9 @@ export default function Project() {
                     href={project.link}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-red-500 font-bold hober:underline hover:text-red-400 text-xl"
+                    className="text-green-100 font-bold hober:underline hover:text-red-400 text-xl"
                   >
-                    View The Project{" "}
+                    View The Project!{" "}
                   </a>
                 </div>
               </article>
