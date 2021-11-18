@@ -29,7 +29,7 @@ export default function Post() {
       <img
         src={image}
         alt="Overlooking the forest"
-        className="absolute object-cover w-full h-full"
+        className="bg-scroll absolute"
       />
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Blog Post Page</h1>

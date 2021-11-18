@@ -32,9 +32,9 @@ export default function About() {
       <img
         src={firewatch}
         alt="Bio Background"
-        className="absolute object-cover w-full h-full"
+        className="bg-scroll absolute"
       />
-      <div className="p-10 lg:pt-36 container mx-auto relative">
+      <div className="p-10 lg:pt-24 container mx-auto relative">
         <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
           <img
             src={urlFor(author.authorImage).url()}

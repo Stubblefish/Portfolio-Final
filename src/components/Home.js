@@ -9,7 +9,7 @@ export default function Home() {
       <img
         src={image}
         alt="Overlooking the forest"
-        className="absolute object-cover w-full h-full"
+        className="absolute bg-fixed"
       />
       <section className="relative flex justify-center min-h-screen pt-12 lg:pt-36 px-8">
         <div class="foo">

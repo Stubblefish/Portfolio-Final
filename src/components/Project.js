@@ -27,18 +27,18 @@ export default function Project() {
       <img
         src={image}
         alt="Overlooking the forest"
-        className="absolute object-cover w-full h-full"
+        className="absolute bg-scroll"
       />
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to my projects page!
         </h2>
-        <section className="grid grid-cols-2 gap-8">
+        <section className="grid grid-cols-2 gap-16 p-12 pt-0">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="bg-green-800 relative rounded-lg shadow-xl bg-white p-16">
-                <h3 className="text-green-300 text-3xl font-bold mb-2 hover:text-red-700">
+              <article className="bg-green-900 bg-opacity-80 relative rounded-lg shadow-xl bg-white p-10">
+                <h1 className="text-center text-green-100 text-4xl font-bold mb-2 hover:underline hover:text-green-400">
                   <a
                     href={project.link}
                     alt={project.title}
@@ -47,20 +47,13 @@ export default function Project() {
                   >
                     {project.title}
                   </a>
-                </h3>
-                <div className="text-green-100 text-xs space-x-4">
+                </h1>
+                <div className=" text-center text-green-100 text-xs space-x-4">
                   <span>
-                    <strong className="font-bold">Finished on</strong>:{" "}
-                    {new Date(project.date).toLocaleDateString()}
+                    <strong className="font-bold font"></strong>{" "}
+                    {project.description}
                   </span>
-                  <span>
-                    <strong className="font-bold">While working at</strong>{" "}
-                    {project.place}
-                  </span>
-                  <span>
-                    <strong className="font-bold">Type</strong>:{" "}
-                    {project.projectType}
-                  </span>
+
                   <p className="my-6 text-lg text-gray-700 leading-relaxed">
                     {project.desription}
                   </p>
@@ -68,7 +61,7 @@ export default function Project() {
                     href={project.link}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-green-100 font-bold hober:underline hover:text-red-400 text-xl"
+                    className="text-green-100 font-bold hover:underline hover:text-green-400 text-2xl"
                   >
                     View The Project!{" "}
                   </a>
