@@ -41,7 +41,7 @@ div.foo {
 }
 .letter:before {
   color: rgb(177, 248, 204);
-  text-shadow: -1px 0px 1px rgba(255, 255, 255, 0.8),
+  text-shadow: -1px 0px 1px rgba(157, 255, 112, 0.8),
     1px 0px 1px rgba(0, 0, 0, 0.8);
   z-index: 3;
   transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
