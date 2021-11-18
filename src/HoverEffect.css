@@ -21,7 +21,7 @@ div.foo {
   font-size: 12em;
   margin: 0em;
   position: relative;
-  color: #072212;
+  color: #13382c;
   transform-style: preserve-3d;
   perspective: 400;
   z-index: 1;
@@ -53,7 +53,7 @@ div.foo {
     skew(0deg, 1deg);
 }
 .letter:hover:before {
-  color: #f2fdb6;
+  color: #a7fdc1;
   transform: rotateX(0deg) rotateY(-60deg) rotateZ(5deg);
 }
 .letter:hover:after {

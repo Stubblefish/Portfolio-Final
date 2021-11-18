@@ -58,7 +58,7 @@ export default function Home() {
             to="/project"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-green-100 hover:text-green-400 text-4xl font-bold cursive tracking-widest"
+            className="inflex-flex items-center border-solid rounded-3xl border-2 border-opacity-50 py-6 px-3 mr-4 text-green-100 hover:text-green-400 text-4xl font-bold cursive tracking-widest"
           >
             Check out my portfolio!
           </NavLink>
