@@ -46,13 +46,19 @@ export default function About() {
               Hey there. I'm{" "}
               <span className="text-green-100">{author.name}</span>
             </h1>
-            <div className="prose lg:prose-xl text-white">
+            <div className="prose lg:prose-xl text-green-100">
               <BlockContent
                 blocks={author.bio}
                 projectId="wnwfst0p"
                 dataset="production"
               />
             </div>
+            <a
+              className="text-green-100 hover:underline hover:text-green-400 text-4xl"
+              href="https://docs.google.com/document/d/1flWS1FVbQgfc2Iow_rDorOLggQte4MDC/edit?usp=sharing&ouid=113779951755772495475&rtpof=true&sd=true"
+            >
+              Check out my resume!
+            </a>
           </div>
         </section>
       </div>
