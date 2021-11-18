@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../firewatch.jpg";
 import "../HoverEffect.css";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
         alt="Overlooking the forest"
         className="absolute object-cover w-full h-full"
       />
-      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-36 px-8">
         <div class="foo">
           <div>
             <span class="letter" data-letter="H">
@@ -53,9 +54,14 @@ export default function Home() {
               !
             </span>
           </div>
-          <div className="text-green-100 bg-green-700 py-2 text-2xl">
-            And welcome to my portfolio!
-          </div>
+          <NavLink
+            to="/project"
+            exact
+            activeClassName="text-white"
+            className="inflex-flex items-center py-6 px-3 mr-4 text-green-100 hover:text-green-400 text-4xl font-bold cursive tracking-widest"
+          >
+            Check out my portfolio!
+          </NavLink>
         </div>
       </section>
     </main>
