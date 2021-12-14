@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
-import { Link } from "react-router-dom";
 import image from "../firewatch.jpg";
 
 export default function Project() {
