@@ -46,10 +46,7 @@ export default function Project() {
           {projectData &&
             projectData.map((project, index) => (
               <article>
-                <Link
-                  to={"/project/" + project.link.current}
-                  key={project.link.current}
-                >
+                <a to={"/project/" + project.link} key={project.link}>
                   <span
                     className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
                     key={index}
@@ -72,7 +69,7 @@ export default function Project() {
                       </h1>
                     </span>
                   </span>
-                </Link>
+                </a>
               </article>
             ))}
         </section>
