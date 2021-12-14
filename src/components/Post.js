@@ -51,7 +51,7 @@ export default function Post() {
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-grey-800 text-lg font-blog px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">
+                      <h3 className="text-grey-800 text-lg font-blog px-3 py-4 bg-green-400 text-black-100 bg-opacity-90 rounded">
                         {post.title}
                       </h3>
                     </span>
