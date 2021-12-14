@@ -56,6 +56,7 @@ export default function Project() {
                   >
                     <img
                       src={project.mainImage.asset.url}
+                      alt={project.title}
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-center items-end pr-4 pb-4">
