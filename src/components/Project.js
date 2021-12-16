@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
-import image from "../firewatch.jpg";
+import image from "../portfolio-background.jpg";
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -34,14 +34,14 @@ export default function Project() {
       <img
         src={image}
         alt="Overlooking the forest"
-        className="absolute bg-scroll"
+        className="absolute object-cover w-full h-full"
       />
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to my projects page!
         </h2>
-        <section className="grid grid-cols-3 gap-16 p-12 pt-0">
+        <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 p-12 pt-0">
           {projectData &&
             projectData.map((project, index) => (
               <article>
@@ -56,7 +56,7 @@ export default function Project() {
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-center items-end pr-4 pb-4">
-                      <h1 className="text-center text-black-100 bg-opacity-90 bg-green-400 rounded-2xl text-4xl font-bold mb-2 hover:underline hover:text-grey-400 p-2">
+                      <h1 className="text-center text-black-100 bg-opacity-95 bg-green-200 rounded-2xl text-4xl font-bold mb-2 hover:underline hover:text-grey-400 p-2">
                         <a
                           href={project.link}
                           alt={project.title}

@@ -18,10 +18,10 @@ div.foo {
 .letter {
   display: inline-block;
   font-weight: 900;
-  font-size: 12em;
+  font-size: 10em;
   margin: 0em;
   position: relative;
-  color: #13382c;
+  color: #305f61;
   transform-style: preserve-3d;
   perspective: 400;
   z-index: 1;
@@ -37,14 +37,14 @@ div.foo {
 .letter,
 .letter:before,
 .letter:after {
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .letter:before {
-  color: rgb(114, 206, 149);
+  color: #e7e5e4;
   text-shadow: -1px 0px 1px rgba(122, 165, 103, 0.8),
     1px 0px 1px rgba(0, 0, 0, 0.8);
   z-index: 3;
-  transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+  transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
 }
 .letter:after {
   color: rgba(0, 0, 0, 0.11);
@@ -53,10 +53,10 @@ div.foo {
     skew(0deg, 1deg);
 }
 .letter:hover:before {
-  color: #a7fdc1;
-  transform: rotateX(0deg) rotateY(-40deg) rotateZ(5deg);
+  color: #fafaf9;
+  transform: rotateX(0deg) rotateY(-20deg) rotateZ(5deg);
 }
 .letter:hover:after {
-  transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg)
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(20deg) rotateZ(0deg)
     skew(0deg, 22deg);
 }

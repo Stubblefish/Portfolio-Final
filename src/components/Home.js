@@ -1,12 +1,16 @@
 import React from "react";
-import image from "../firewatch.jpg";
+import image from "../portfolio-background.jpg";
 import "../HoverEffect.css";
 import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
     <main>
-      <img src={image} alt="Overlooking the forest" className="absolute" />
+      <img
+        src={image}
+        alt="Overlooking the forest"
+        className="absolute object-cover w-full h-full"
+      />
       <section className="relative flex justify-center min-h-screen pt-12 lg:pt-24 px-8">
         <div class="foo">
           <div>
@@ -54,7 +58,7 @@ export default function Home() {
             to="/project"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center border-solid rounded-2xl border-2 border-opacity-50 bg-green-800 bg-opacity-75 px-3 mr-4 text-green-300 hover:text-green-400 text-4xl font-bold cursive tracking-widest"
+            className="inflex-flex items-center border-solid rounded-2xl border-2 border-opacity-50 bg-gradient-to-r from-green-100 to-green-50 px-3 mr-4 text-green-900 hover:text-green-400 text-6xl font-bold cursive tracking-widest"
           >
             Check out my Portfolio!
           </NavLink>
